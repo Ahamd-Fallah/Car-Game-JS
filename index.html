@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="Style/Style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarGame</title>
+</head>
+<body>
+    <table id="tbl">
+        <tr>
+            <th><p>Key</p></th>
+            <th><p>Function</p></th>
+        </tr>
+        <tr>
+            <td>W</td>
+            <td>Increase speed</td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>Reverse</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>Turn on lights</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>Honk</td>
+        </tr>
+    </table>
+        <div id="car">
+        <div id="light"></div>
+        <div id="light2" style="top: 10px;"></div>
+    </div>
+    <div id="coin"></div>
+    <div id="score">Score: 0</div>
+    <button id="finish-btn">Finish Game</button>
+    <div id="popup" style="display: none;">
+    <div id="popup-content">
+        <span id="close-btn">&times;</span>
+        <h2>Game Over</h2>
+        <p id="final-score"></p>
+    </div>
+</div>
+    <script src="Script/Script.js"></script>
+</body>
+</html>
+
