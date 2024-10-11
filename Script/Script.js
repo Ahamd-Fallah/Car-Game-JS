@@ -105,9 +105,9 @@ function moveCoin() {
     do {
         newX = Math.floor(Math.random() * (window.innerWidth - 20));
         newY = Math.floor(Math.random() * (window.innerHeight - 20));
-    } while ((newX < margin && newY < margin + carHeight) || // avoid initial car position
-            (newX < table.right && newY < table.bottom) || // avoid table
-            (newY > window.innerHeight - margin)); // avoid bottom
+    } while ((newX < margin && newY < margin + carHeight) || 
+            (newX < table.right && newY < table.bottom) ||
+            (newY > window.innerHeight - margin)); 
 
     $('#coin').css('left', newX);
     $('#coin').css('top', newY);
